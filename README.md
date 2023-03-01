@@ -1,4 +1,4 @@
-![Logo DIT](img\Logo.png)
+![Logo DIT](:img\Logo.png)
 *KUDAWOO Séna Kodjovi*
 # Special Method Names
 ## Contents
