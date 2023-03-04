@@ -1,5 +1,4 @@
-# upgraded-journey
-![Logo DIT](img\Logo.png)
+![Logo DIT](img/Logo.png)
 
 *By KUDAWOO Séna Kodjovi_Master1 IA DIT(Dakar)*
 # Special Method Names
@@ -17,10 +16,9 @@
 7. Classes That Can Be Compared
 8. Classes That Can Be Serialized
 9. Classes That Can Be Used in a with Block
-### Potential bypass
-### Use cases vs data analysis
 ### Conclusion 
-  - To learn more about
+### Documentation
+
 
 ---
 >> ## Introduction
@@ -54,7 +52,7 @@ In this section, we will see how to use some common magic methods that are impor
 __ iter__() and  __ next__() are called whenever you create a new itertor and retrieve the next value of the iterator. 
 In Python, an iterator is an object that can be iterated upon. In simpler words, we can say that Iterators are objects that allow you to traverse through all the elements of a collection and return one element at a time. More specifically, we say that an iterator is an object that implements the iterator protocol.
 Iterators are used in both **for loops** and **while loops**. 
-![ITER()](img\iter.JPG)
+![ITER()](img/iter.JPG)
 
 #### Practical Example
 Here is a simple example, describing these methods:
@@ -459,10 +457,12 @@ False
 David == Patrick :  False
 
 ---
-## Use cases in data analysis
----
-
 ## Conclusion 
 ---
 It is a must konw to understand special mmethod to manipule objects, series, dataframe or multiframe in python ans to process data. 
 Understanding what is under the hood will facilitate manipulation of objects of class among them
+
+---
+## Documentation
+---
+https://www.geeksforgeeks.org/python-map-function/
