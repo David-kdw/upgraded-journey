@@ -4,24 +4,22 @@
 # Special Method Names
 >> ## Contents
 ---
-### Introduction
-### Basic Concept of Special Methods
-### Other special Method : Theory and Practical examples
-1. Classes That Act Like Iterators
-2. Computed Attributes
-3. Classes That Act Like Functions
-4. Classes That Act Like Sets
-5. Classes That Act Like Dictionaries
-6. Classes That Act Like Numbers
-7. Classes That Can Be Compared
-8. Classes That Can Be Serialized
-9. Classes That Can Be Used in a with Block
-### Conclusion 
+### 1. Introduction
+### 2. Basic Concept of Special Methods
+### 3. Other special Method : Theory and Practical examples
+3.1. Classes That Act Like Iterators
+3.2. Computed Attributes
+3.3. Classes That Act Like Functions
+3.4. Classes That Act Like Sets
+3.5. Classes That Act Like Dictionaries
+3.6. Classes That Act Like Numbers
+3.7. Classes That Can Be Compared
+### 4. Conclusion 
 ### Documentation
 
 
 ---
->> ## Introduction
+>> ## 1. Introduction
 ---
 As in every language of programmation, Python has its predefined classes as well as own classes can be defined. Classes have attributes, methods and **special methods - “magic” methods**. 
 
@@ -29,9 +27,14 @@ In this section, we will learn about a variety of instance methods that are rese
 Using special methods, your classes can act like sets, like dictionaries, like functions, like iterators, or even like numbers. Let us explore their meaning, use, syntax and more...
 
 ---
->> ## Basic Concept of Special Methods
+>> ## 2. Basic Concept of Special Methods
 ---
-We will recall that we have already used a special method named *__ init__()* to initialize attributes of classes and controls the process of creating instances of a class. This was in fact a magic method in the class. 
+|   |     |
+| --------------------------- | ---------------- |
+| We will recall that we have already used a special method named *__ init__()* to initialize attributes of classes and controls the process of creating instances of a class. This was in fact a magic method in the class. | ![Special_Methods.py](img/Special_mthd.jpg)|
+
+
+ 
 
 Generally, we can recognize a magic method inside a class by the edges __ "__(*dunder* double underscore) bordering the method name. Some basic ones to know for debugging a custom class are as follow : 
 | Method | Explanation | Signature under the hood|
@@ -42,11 +45,11 @@ Generally, we can recognize a magic method inside a class by the edges __ "__(*d
 | the value as a formatted string| format(x, format_spec)|x.__ format__(format_spec)|
 
 ---
->> ## Other special Method : Theory and Practical examples
+>> ## 3. Other special Method : Theory and Practical examples
 ---
 In this section, we will see how to use some common magic methods that are important to know in our programming adventure along with python
 
-### Classes That Act Like Iterators
+### 3.1 Classes That Act Like Iterators
 ---
 #### Theory 
 __ iter__() and  __ next__() are called whenever you create a new itertor and retrieve the next value of the iterator. 
@@ -92,7 +95,7 @@ while True:
 1 2 3 4 5 6 7 8 9 0
 
 
-### Computed Attributes
+### 3.2 Computed Attributes
 ---
 ##### Theory 
 Python provides a set of methods that classes can use to access the attributes of an object. Whenever we retrieve or set an object’s attributes, Python calls one of these functions to perform any desired processing. 
@@ -159,7 +162,7 @@ cls1.__dir__()
 The above code modifies the attribute related methods to get colour information. As user passes a supported attribute name, e.g. `rgbcolor` python will return the value corresponding to the name
 
 
-### Classes That Act Like Functions
+### 3.3 Classes That Act Like Functions
 ---
 #### Theory 
 It is possible to make an instance of a class callable — exactly like a function is callable — by defining the __ call__() method. 
@@ -186,7 +189,7 @@ e(2)
 Instance Created
 
 4
-### Classes That Act Like Sets
+### 3.4 Classes That Act Like Sets
 ---
 #### Theory 
 The following special methods allow us to give our class a container interface, like set. 
@@ -239,7 +242,7 @@ Whether (2020, 6, 4) is within the mentioned date range?  True
 
 Whether (2022, 8, 2) is within the mentioned date range?  False
 
-### Classes That Act Like Dictionaries
+### 3.5 Classes That Act Like Dictionaries
 ---
 #### Theory 
 Extending the previous section a bit, you can define classes that not only respond to the “in” operator and the len() function, but they act like full-blown dictionaries, returning values based on keys
@@ -341,7 +344,7 @@ The new balance is : 600
 The no. of transactions are: 3
 The transaction history is: [100, 200, 300]
 
-### Classes That Act Like Numbers
+### 3.6 Classes That Act Like Numbers
 ---
 #### Theory 
 Using the appropriate special methods, you can define your own classes that act like numbers. That is, you can add them, subtract them, and perform other mathematical operations on them.
@@ -396,7 +399,7 @@ print(gfg.__pow__(3))
 [  1   8  27  64  125]
 
 
-### Classes That Can Be Compared
+### 3.7 Classes That Can Be Compared
 ----
 #### Theory 
 If you’re creating your own class and it makes sense to compare your objects to other objects, you can use the following special methods to implement comparisons. 
@@ -457,7 +460,7 @@ False
 David == Patrick :  False
 
 ---
-## Conclusion 
+## 4. Conclusion 
 ---
 It is a must konw to understand special mmethod to manipule objects, series, dataframe or multiframe in python ans to process data. 
 Understanding what is under the hood will facilitate manipulation of objects of class among them
@@ -465,4 +468,5 @@ Understanding what is under the hood will facilitate manipulation of objects of 
 ---
 ## Documentation
 ---
-https://www.geeksforgeeks.org/python-map-function/
+- https://www.geeksforgeeks.org/python-map-function/
+- https://diveintopython3.problemsolving.io/special-method-names.html
