@@ -7,13 +7,21 @@
 ### 1. Introduction
 ### 2. Basic Concept of Special Methods
 ### 3. Other special Method : Theory and Practical examples
+
 3.1. Classes That Act Like Iterators
+
 3.2. Computed Attributes
+
 3.3. Classes That Act Like Functions
+
 3.4. Classes That Act Like Sets
+
 3.5. Classes That Act Like Dictionaries
+
 3.6. Classes That Act Like Numbers
+
 3.7. Classes That Can Be Compared
+
 ### 4. Conclusion 
 ### Documentation
 
@@ -29,8 +37,8 @@ Using special methods, your classes can act like sets, like dictionaries, like f
 ---
 >> ## 2. Basic Concept of Special Methods
 ---
-|   |     |
-| --------------------------- | ---------------- |
+|                                                      |                                                             |
+| ---------------------------------------------------- | ----------------------------------------------------------- |
 | We will recall that we have already used a special method named *__ init__()* to initialize attributes of classes and controls the process of creating instances of a class. This was in fact a magic method in the class. | ![Special_Methods.py](img/Special_mthd.jpg)|
 
 
